@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>FollowGramz</title>
+    <meta name="description" content="">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.unpacker.org/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.unpacker.org/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-title">
+                FollowGramz
+            </div>
+
+            <div class="logo-excerpt">
+                Get a lot of followers instantly!
+            </div>
+
+            <div class="logo-image"></div>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span class="h4">
+                    <i class="fa fa-fw fa-users"></i>
+                    Follower Increaser
+                </span>
+            </div>
+
+            <form action="/" method="post" id="form-request">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="form-user">
+                            Enter your username
+                        </label>
+                        <input type="text" name="form-user" id="form-user" placeholder="@username" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-amount">
+                            Select amount of followers (<span class="form-amount-value text-primary"></span>)
+                        </label>
+                        <input type="text" name="form-amount" id="form-amount" data-slider-id="range-slider-1" data-slider-min="5000" data-slider-max="55000" data-slider-step="10" data-slider-value="10000" class="form-range">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-panel">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="h4">
+                    <i class="fa fa-fw fa-video-camera"></i>
+                    Video Demonstration
+                </span>
+            </div>
+
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kn2kVwCwilg?color=white"></iframe>
+                </div>
+
+                <hr>
+
+                <h3>
+                    Video Excerpt
+                </h3>
+
+                <p>
+                    In this video you can see how to use our Follower Increase tool
+                    that will boost your followers in no time!
+                    Our tool is 99.99% safe and you won't have to worry about being banned on Instagram.
+                    The 0.01% that remains is that there may be chance that you lose delivered followers, but that's it!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-process" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h4 modal-title">
+                        <span class="fa fa-fw fa-lg fa-terminal"></span> Virtual Console Output
+                    </p>
+                </div>
+
+                <div class="modal-body">
+                    <div class="console-container">
+                        <ul class="console-messages" id="console-messages"></ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="console-btn" class="btn btn-block btn-primary" data-loading-text="<span class='fa fa-fw fa-lg fa-spin fa-circle-o-notch'></span> Please wait" onclick="window.App.locker.call()">
+                        Continue
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS App & Dependencies -->
+    <script>
+        window.App = {
+            locker: function () {
+                alert('demo');
+            },
+            consoleMessages: [
+                'Initiating a process',
+                'Please wait, do not reload this page',
+                'Processing user data',
+                'User - {user}, has requested {amount} followers',
+                'Connecting to database',
+                'Storing request to database',
+                'Success! Data insertion is completed',
+                'User verification required',
+                'Please complete short offer to prove your humanity'
+            ]
+        };
+    </script>
+
+    <script src="https://cdn.unpacker.org/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.unpacker.org/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
